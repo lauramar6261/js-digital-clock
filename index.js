@@ -5,6 +5,10 @@ $(document).ready(function() {
     let time = new Date()
     let hours = time.getHours()
     let min = time.getMinutes()
+    let sec = time.getSeconds()
+    if (sec < 10) {
+      sec = "0" + sec
+    }
     if (min < 10) {
       min = "0" + min
     }
@@ -14,6 +18,6 @@ $(document).ready(function() {
     } else {
       description = "am"
     }
-    $('#clock').empty().append(hours + ":" + min + " " + description)
+    $('#clock').empty().append(hours + ":" + min + ":" + sec + description)
   }
 });
