@@ -24,7 +24,5 @@ $(document).ready(function() {
       $('#clock').removeClass();
       $('#clock').addClass(`${$(this).text()}`);
     });
-
-
   }
 });
