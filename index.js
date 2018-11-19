@@ -19,21 +19,10 @@ $(document).ready(function() {
       description = "am"
     }
     $('#clock').empty().append(hours + ":" + min + ":" + sec + description)
-    $('#button1').click( function() {
-      $('#clock').removeClass();
-      $('#clock').addClass('clock1');
-    });
-    $('#button2').click( function() {
-      $('#clock').removeClass();
-      $('#clock').addClass('clock2');
-    });
-    $('#button3').click( function() {
-      $('#clock').removeClass();
-      $('#clock').addClass('clock3');
-    });
     $('button').click( function() {
+      alert(`test "${$(this).html()}"`);
       $('#clock').removeClass();
-      $('#clock').addClass('clock1');
+      $('#clock').addClass(`${$(this).text()}`);
     });
 
 
