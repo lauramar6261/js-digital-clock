@@ -18,15 +18,15 @@ div {
     font-size: 100px;
 }
 
-.clock1 {
-  color: #4CAF50;
+.green {
+  color: green;
 }
 
-.clock2 {
-  color: #008CBA;
+.blue {
+  color: blue;
 }
 
-.clock3 {
+.tomato {
   color: #f44336;
 }
 

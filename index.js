@@ -20,7 +20,7 @@ $(document).ready(function() {
     }
     $('#clock').empty().append(hours + ":" + min + ":" + sec + description)
     $('button').click( function() {
-      alert(`test "${$(this).html()}"`);
+      //alert(`test "${$(this).html()}"`);
       $('#clock').removeClass();
       $('#clock').addClass(`${$(this).text()}`);
     });
