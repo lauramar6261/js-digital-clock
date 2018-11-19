@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  let myVar = setInterval(myTimer, 1000);
+  setInterval(myTimer, 1000);
   function myTimer() {
     let time = new Date()
     let hours = time.getHours()
@@ -19,5 +19,23 @@ $(document).ready(function() {
       description = "am"
     }
     $('#clock').empty().append(hours + ":" + min + ":" + sec + description)
+    $('#button1').click( function() {
+      $('#clock').removeClass();
+      $('#clock').addClass('clock1');
+    });
+    $('#button2').click( function() {
+      $('#clock').removeClass();
+      $('#clock').addClass('clock2');
+    });
+    $('#button3').click( function() {
+      $('#clock').removeClass();
+      $('#clock').addClass('clock3');
+    });
+    $('button').click( function() {
+      $('#clock').removeClass();
+      $('#clock').addClass('clock1');
+    });
+
+
   }
 });
